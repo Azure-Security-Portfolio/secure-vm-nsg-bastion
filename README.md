@@ -144,4 +144,6 @@ In this lab, I show how to harden Azure VMs so only authorized admins can access
 
 ---
 
-Sebastian Silva C. - July, 2025 - Berlin, Germany.
+Sebastian Silva C. – July 2025 – Berlin, Germany.
+- [LinkedIn](https://www.linkedin.com/in/sebastiansilc/)
+- [GitHub](https://github.com/SebaSilC)
