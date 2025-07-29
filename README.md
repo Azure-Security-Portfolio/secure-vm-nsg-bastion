@@ -6,12 +6,12 @@ Implementation of a hardened Azure Virtual Machine environment using Network Sec
 
 ## Table of Contents
 
-- [Overview]
-- [Real-World Risk]
-- [What I Built]
-- [Diagram]
-- [Objectives]
-- [Steps Performed]
+- [Overview](#overview)
+- [Real-World Risk](#real-world-risk)
+- [What I Built](#what-i-built)
+- [Diagram](#diagram)
+- [Objectives](#objectives)
+- [Steps Performed](#steps-performed)
   - [1. Resource Group and Virtual Network Creation]
   - [2. Subnet and NSG Configuration]
   - [3. Virtual Machine Deployment (No Public IP)]
@@ -19,9 +19,9 @@ Implementation of a hardened Azure Virtual Machine environment using Network Sec
   - [5. Azure Bastion Deployment]
   - [6. Secure Remote Access Test]
   - [7. Cleanup]
-- [Screenshots]
-- [Lessons Learned]
-- [References]
+- [Screenshots](#screenshots)
+- [Lessons Learned](#lessons-learned)
+- [References](#references)
 
 ---
 
