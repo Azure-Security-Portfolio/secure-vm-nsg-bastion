@@ -1,4 +1,4 @@
-## Secure Azure VM with NSG & Bastion Lab
+## Azure Secure Virtual Machine with Network Security Group & Bastion Lab
 
 Implementation of a hardened Azure Virtual Machine environment using Network Security Groups (NSG) and Azure Bastion. This lab demonstrates real-world network protection by blocking public RDP/SSH access, enforcing zero-trust segmentation, and enabling secure, browser-based admin access—addressing the #1 cloud security risk: exposed management ports.
 
