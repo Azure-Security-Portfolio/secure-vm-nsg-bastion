@@ -22,6 +22,7 @@ Implementation of a hardened Azure Virtual Machine environment using Network Sec
 - [Screenshots](#screenshots)
 - [Lessons Learned](#lessons-learned)
 - [References](#references)
+- [Contact](#contact)
 
 ---
 
@@ -144,6 +145,7 @@ In this lab, I show how to harden Azure VMs so only authorized admins can access
 
 ---
 
-Sebastian Silva C. – July 2025 – Berlin, Germany.
-- [LinkedIn](https://www.linkedin.com/in/sebastiansilc/)
-- [GitHub](https://github.com/SebaSilC)
+## Contact
+
+Sebastian Silva C. – July, 2025 – Berlin, Germany.  
+[LinkedIn](https://www.linkedin.com/in/sebastiansilc) | [GitHub](https://github.com/SebaSilC) | [sebastian@playbookvisualarts.com](mailto:sebastian@playbookvisualarts.com)
