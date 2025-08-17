@@ -70,46 +70,37 @@ In this lab, I show how to harden Azure VMs so only authorized admins can access
 ## Steps Performed
 
 **1. Resource Group and Virtual Network Creation**
-   - Created a dedicated resource group (SecLab04-RG) for isolation and easy cleanup *(Screenshot: create-resource-group.png)*
-   - Deployed a virtual network (SecLab04-VM-vnet) with a default subnet for VM and Bastion placement *(Screenshot: create-vnet.png)*
+   - Created a dedicated resource group (SecLab04-RG) for isolation and easy cleanup *(Screenshot: `create-resource-group.png`)*
+   - Deployed a virtual network (SecLab04-VM-vnet) with a default subnet for VM and Bastion placement *(Screenshot: `create-vnet.png`)*
 
 **2. Subnet and NSG Configuration**
    - Configured the default subnet for VM placement.
-   - Created a Network Security Group (SecLab04-NSG) and associated it with the subnet *(Screenshots: create-nsg.png & associate-nsg.png)*
-   - Ensured NSG rules blocked all inbound public traffic by default *(Screenshot: nsg-inbound-rules.png)*
+   - Created a Network Security Group (SecLab04-NSG) and associated it with the subnet *(Screenshots: `create-nsg.png` & `associate-nsg.png`)*
+   - Ensured NSG rules blocked all inbound public traffic by default *(Screenshot: `nsg-inbound-rules.png`)*
 
 **3. Virtual Machine Deployment (No Public IP)**
    - Deployed a VM (SecLab04-VM) with no public IP assigned.
-   - Verified no public inbound ports (RDP/SSH) were open *(Screenshot: create-vm.png)*
+   - Verified no public inbound ports (RDP/SSH) were open *(Screenshot: `create-vm.png`)*
 
 **4. Azure Bastion Subnet Addition**
-   - Added a dedicated subnet (Azure Bastion Subnet) to the VNet for Bastion, using a /26 address space *(Screenshot: create-bastion-subnet.png)*
+   - Added a dedicated subnet (Azure Bastion Subnet) to the VNet for Bastion, using a /26 address space *(Screenshot: `create-bastion-subnet.png`)*
 
 **5. Azure Bastion Deployment**
    - Deployed Azure Bastion (SecLab04-Bastion) into the new subnet.
-   - Configured Bastion to use its own public IP for managed, secure connectivity *(Screenshot: create-bastion.png)*
+   - Configured Bastion to use its own public IP for managed, secure connectivity *(Screenshot: `create-bastion.png`)*
 
 **6. Secure Remote Access Test**
    - Connected to the VM securely through Azure Bastion’s browser-based session.
-   - Verified RDP/SSH access worked internally, with no public exposure *(Screenshot: bastion-session.png)*
+   - Verified RDP/SSH access worked internally, with no public exposure *(Screenshot: `bastion-session.png`)*
 
 **7. Cleanup**
    - Deleted the resource group to remove all lab resources and avoid ongoing costs.
 
 ---
 
-## What I Learned
-
-- How to apply zero-trust networking principles in Azure.
-- How to eliminate public exposure for VMs while maintaining secure admin access.
-- Azure Bastion architecture and required subnet configuration.
-- Effective use of NSG rules to segment and restrict cloud network traffic.
-
----
-
 ## Screenshots
 
-*All screenshots are included in the screenshots/ folder.*
+*All screenshots are included in the `screenshots/` folder.*
 
 | Step | Filename                  | Description                                                   |
 | ---- | ------------------------- | ------------------------------------------------------------- |
